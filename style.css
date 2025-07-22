@@ -1,0 +1,169 @@
+/* Reset básico de margin e padding, configura a fonte padrão para todo o site. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Configuração do body: cor de fundo clara, texto escuro e espaçamento de linha confortável */
+body {
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilo da NAVBAR: centraliza os itens do menu e define a cor de fundo escura */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: #0f172a;
+  padding: 10px 0;
+}
+
+/* Lista de links do menu: remove marcadores e distribui com espaçamento */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Estilo dos links do menu: branco, sem sublinhado, com efeito hover de cor e zoom */
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #facc15; /* amarelo destaque */
+  transform: scale(1.1);
+}
+
+/* Área HERO: banner principal com fundo gradiente e texto centralizado com imagem */
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Foto do perfil: tamanho fixo, formato redondo, borda branca */
+.hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+/* Nome principal no hero */
+.hero-text h1 {
+  font-size: 2.2rem;
+}
+
+/* Subtítulo do hero */
+.hero-text h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Estilo dos ícones das redes sociais */
+.social a {
+  display: inline-block;
+  margin: 0 8px;
+  color: white;
+  font-size: 1.6rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social a:hover {
+  color: #facc15;
+  transform: scale(1.2);
+}
+
+/* Layout das sections: largura máxima, centralizado, fundo branco, arredondado e sombra */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Título das sections com barra lateral colorida */
+section h2 {
+  margin-bottom: 20px;
+  border-left: 5px solid #0f172a;
+  padding-left: 10px;
+  color: #0f172a;
+}
+
+/* HABILIDADES: organiza as skills em linha e com espaçamento */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Cada habilidade: fundo cinza claro, texto escuro, arredondado e efeito hover */
+.skills span {
+  background: #e2e8f0;
+  color: #0f172a;
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+  cursor: default;
+}
+
+.skills span:hover {
+  background: #cbd5e1; /* tom um pouco mais escuro no hover */
+  transform: scale(1.1);
+}
+
+/* Ícone das habilidades: tamanho reduzido para caber no span */
+.skills span img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Links dos cursos e redes externas: azul escuro e efeito hover */
+.social-link {
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-link:hover {
+  color: #facc15;
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* Espaçamento entre cada projeto listado */
+.project {
+  margin-bottom: 20px;
+}
+
+/* Rodapé: fundo escuro, texto branco centralizado, espaçamento interno */
+footer {
+  text-align: center;
+  background: #0f172a;
+  color: white;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
