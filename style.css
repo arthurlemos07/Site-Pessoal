@@ -167,3 +167,76 @@ footer {
   font-size: 0.9rem;
   margin-top: 40px;
 }
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+
+  /* NAVBAR: empilhar links verticalmente */
+  .navbar {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* HERO: layout em coluna para mobile */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .hero img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1rem;
+  }
+
+  .social {
+    margin-top: 10px;
+  }
+
+  /* SECTION: padding e margens menores */
+  section {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  .skills span {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .skills span img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .project {
+    margin-bottom: 15px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 15px 8px;
+  }
+}
